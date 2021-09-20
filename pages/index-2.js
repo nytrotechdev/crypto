@@ -9,12 +9,14 @@ import OurFeature from '../components/Common/OurFeature';
 import AppDownload from '../components/Common/AppDownload';
 import AdvisorArea from '../components/Common/AdvisorArea';
 import RegisterArea from '../components/Common/RegisterArea';
+import TokenGenerator from '../components/TokenGenerator/TokenGenerator';
 
 const Index = () => {
   return (
     <>
       <Banner />
       <AccountCreate />
+      <TokenGenerator />
       <BestSeller />
       <BuySell />
       <FunFact bgf9f9f9='bg-f9f9f9' pt100='pt-100' pb70='pb-70' />

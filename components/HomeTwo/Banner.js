@@ -218,6 +218,7 @@ const Banner = () => {
                 </div>
               </div>
             </div>
+        
           </div>
           <div className='banner-image'>
             <img src='/images/banner/banner-img2.png' alt='image' />
@@ -228,7 +229,7 @@ const Banner = () => {
           <img src='/images/shape/shape1.png' alt='image' />
         </div>
         <div className='shape2'>
-          <img src='/images/logo.png' alt='image' />
+          <img src='/images/logo-shape.png' alt='image' />
         </div>
         <div className='shape3'>
           <img src='/images/shape/shape3.png' alt='image' />

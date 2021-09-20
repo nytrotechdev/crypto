@@ -63,7 +63,7 @@ const Banner = () => {
     <>
       <div className='main-banner-area'>
         <div className='container'>
-          <div className='main-banner-box'>
+          {/* <div className='main-banner-box' >
             <div className='currency-selection'>
               <label>YOU PAY</label>
               <input
@@ -162,9 +162,167 @@ const Banner = () => {
               <i className='bx bxs-hand-right'></i> Buy With Visa
             </a>
           </div>
+        */}
+
+        <div className='banner-content' style={{marginTop:'208px',}}>
+            <div className='cryptocurrency-search-box'>
+              <div className='row'>
+                <div className='col-lg-5 col-md-5'>
+                  <div className='currency-selection'>
+                    <label>YOU PAY</label>
+                    <input
+                      type='text'
+                      value={cryptoQuantity}
+                      onChange={(e) => setcryptoQuantity(e.target.value)}
+                    />
+                    <div
+                      className={toggleState ? 'dropdown show' : 'dropdown'}
+                      onClick={() => toggleTabOne()}
+                    >
+                      <button
+                        className='dropdown-toggle'
+                        type='button'
+                        data-bs-toggle='dropdown'
+                        aria-expanded='false'
+                      >
+                        <img src={image} alt='image' /> {name}
+                        <span>
+                          {toggleState ? (
+                            <i className='bx bx-chevron-up'></i>
+                          ) : (
+                            <i className='bx bx-chevron-down'></i>
+                          )}
+                        </span>
+                      </button>
+                      <ul
+                        className={
+                          toggleState ? 'dropdown-menu show' : 'dropdown-menu'
+                        }
+                      >
+                        {newData.length > 0 &&
+                          newData.map((data, index) => (
+                            <li
+                              key={index}
+                              onClick={(e) => toggleSelected(data, index)}
+                              value='watch'
+                              className={
+                                clicked === index
+                                  ? 'option selected focus'
+                                  : 'option'
+                              }
+                            >
+                              <div className='coin-wrapper'>
+                                <img src={data.image} alt='image' />
+                                {data.name}
+                              </div>
+                            </li>
+                          ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-lg-5 col-md-5'>
+                  <div className='currency-selection'>
+                    <label>YOU RECEIVE</label>
+                    <input
+                      type='text'
+                      value={conversionValue * cryptoQuantity}
+                      onChange={(e) => e}
+                    />
+                    <div className='dropdown'>
+                      <button
+                        className='dropdown-toggle'
+                        type='button'
+                        data-bs-toggle='dropdown'
+                        aria-expanded='false'
+                      >
+                        <img src={imageTwo} alt='image' /> {nameTwo}
+                      </button>
+                      {/* <ul className='dropdown-menu'>
+                        <li>
+                          <div className='dropdown-item'>
+                            <img
+                              src='/images/cryptocurrency/cryptocurrency1.png'
+                              alt='image'
+                            />{' '}
+                            USD
+                          </div>
+                        </li>
+                        <li>
+                          <div className='dropdown-item'>
+                            <img
+                              src='/images/cryptocurrency/cryptocurrency3.png'
+                              alt='image'
+                            />{' '}
+                            Litecoin
+                          </div>
+                        </li>
+                        <li>
+                          <div className='dropdown-item'>
+                            <img
+                              src='/images/cryptocurrency/cryptocurrency4.png'
+                              alt='image'
+                            />{' '}
+                            XRP
+                          </div>
+                        </li>
+                        <li>
+                          <div className='dropdown-item'>
+                            <img
+                              src='/images/cryptocurrency/cryptocurrency5.png'
+                              alt='image'
+                            />{' '}
+                            Stellar
+                          </div>
+                        </li>
+                        <li>
+                          <div className='dropdown-item'>
+                            <img
+                              src='/images/cryptocurrency/cryptocurrency6.png'
+                              alt='image'
+                            />{' '}
+                            Cardano
+                          </div>
+                        </li>
+                        <li>
+                          <div className='dropdown-item'>
+                            <img
+                              src='/images/cryptocurrency/cryptocurrency7.png'
+                              alt='image'
+                            />{' '}
+                            Groestlcoin
+                          </div>
+                        </li>
+                        <li>
+                          <div className='dropdown-item'>
+                            <img
+                              src='/images/cryptocurrency/cryptocurrency8.png'
+                              alt='image'
+                            />{' '}
+                            Digibyte
+                          </div>
+                        </li>
+                      </ul> */}
+                    </div>
+                  </div>
+                </div>
+                <div className='col-lg-2 col-md-5'>
+                  <div className='buy-btn'>
+                    <Link href='https://www.coinbase.com/accounts'>
+                      <button type='submit'>
+                        <i className='bx bxs-hand-right'></i> Buy Bitcoin
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        
           <div className='row align-items-center m-0'>
             <div className='col-xl-6 col-lg-6 col-md-12 p-0'>
-              <div className='main-banner-content'>
+              <div className='main-banner-content' >
                 <h1>Buy & Sell Cryptocurrency Easy, Fast and Secure!</h1>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -182,9 +340,16 @@ const Banner = () => {
                 </Link>
               </div>
             </div>
-            <div className='col-xl-4 col-lg-12 col-md-12 p-0'>
+            {/* <div className='col-xl-4 col-lg-12 col-md-12 p-0'>
               <div className='main-banner-image'>
                 <img src='/images/banner/banner-img1.png' alt='image' />
+              </div>
+            </div> */}
+            <div className='col-xl-4 col-lg-12 col-md-12 p-0'>
+           <div className='main-banner-image' >
+        
+                <img  src='/images/banner/banner-img1.png' alt='image' />
+              
               </div>
             </div>
           </div>
@@ -192,7 +357,7 @@ const Banner = () => {
         <div className='shape1'>
           <img src='/images/shape/shape1.png' alt='image' />
         </div>
-        <div className='shape2' style={{marginTop:'10px'}}>
+        <div className='shape2' style={{margin:'0px 25px 10px 80%',position:'absolute' ,top:'0px' }}>
           <img src='/images/logo-shape.png' alt='image' />
         </div>
         <div className='shape3'>
@@ -201,9 +366,9 @@ const Banner = () => {
         <div className='shape5'>
           <img src='/images/shape/shape5.png' alt='image' />
         </div>
-        <div className='shape9'>
+        {/* <div className='shape9'>
           <img src='/images/shape/shape9.png' alt='image' />
-        </div>
+        </div> */}
       </div>
     </>
   );

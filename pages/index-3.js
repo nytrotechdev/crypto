@@ -8,11 +8,13 @@ import BuySell from '../components/Common/BuySell';
 import AppDownload from '../components/Common/AppDownload';
 import AdvisorArea from '../components/Common/AdvisorArea';
 import RegisterArea from '../components/Common/RegisterArea';
+import TokenGenerator from '../components/TokenGenerator/TokenGenerator';
 
 const Index = () => {
   return (
     <>
       <Banner />
+      <TokenGenerator />
       <Features />
       <TokensArea />
       <CryptocurrencyArea />

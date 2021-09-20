@@ -1492,8 +1492,8 @@ Main Banner Area CSS
 .shape2 {
   position: absolute;
   z-index: -1;
-  bottom: 10%;
-  left: 14%;
+  top: 20px;
+  right: 0;
 }
 
 .shape2 img {
@@ -1523,6 +1523,7 @@ Main Banner Area CSS
 .shape5 {
   position: absolute;
   left: 0;
+  top: 0;
   bottom: 0;
   z-index: -1;
 }
