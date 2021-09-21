@@ -3488,9 +3488,9 @@
   .banner-area .container {
     max-width: 1500px;
   }
-  .banner-content .cryptocurrency-search-box {
+  /* .banner-content .cryptocurrency-search-box {
     max-width: 1390px;
-  }
+  } */
   .banner-content .cryptocurrency-search-box .buy-btn button {
     padding: 0 30px 0 50px;
   }

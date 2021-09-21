@@ -164,7 +164,7 @@ const Banner = () => {
           </div>
         */}
 
-        <div className='banner-content' style={{marginTop:'208px',}}>
+        <div className='banner-content'>
             <div className='cryptocurrency-search-box'>
               <div className='row'>
                 <div className='col-lg-5 col-md-5'>

@@ -1142,8 +1142,8 @@ Main Banner Area CSS
 }
 
 .banner-content {
-  top: 50%;
-  left: 8px;
+  bottom: -60px;
+  left: 0;
   width: 100%;
   position: absolute;
   -webkit-transform: translateY(-50%);
@@ -1160,8 +1160,8 @@ Main Banner Area CSS
 .banner-content .cryptocurrency-search-box {
   background-color: var(--mainColor);
   border-radius: 10px;
-  max-width: 1300px;
-  margin-top: 50px;
+  /* max-width: 1300px; */
+  /* margin-top: 50px; */
   padding: 40px;
 }
 
